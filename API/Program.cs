@@ -40,7 +40,7 @@ builder.Services.AddSwaggerGen(c =>
 builder.Services.ConfigureCors();
 builder.Services.AddDbContext<DbAppContext>(options =>
 {
-    options.UseNpgsql("Host=localhost;Database=MadridDb;User=postgres;Password=;1122809631");
+    options.UseNpgsql("Host=localhost;Database=MadridDb;Username=postgres;Password=1122809631");
 });
 
 var key = builder.Configuration.GetValue<string>("JwtSettings:Key");
