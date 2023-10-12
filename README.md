@@ -1,6 +1,6 @@
 <!-- Encabezado -->
 <img src="./assets/background.jpeg" alt="Imagen Farmacia" width="auto" height="auto">
-<h1 align="center"><img width="26" height="26" src="https://img.icons8.com/doodle/36/pills.png" alt="pills"/><b>HalaMadridApp</b></h1>
+<h1 align="center"><img width="32" height="32" src="https://img.icons8.com/color/48/real-madrid.png" alt="pills"/><b>HalaMadridApp</b></h1>
 <br>
 <!-- Descripcion -->
 <p>Proyecto Webapi en .NET Core con autenticación JWT para gestionar autenticación y autorización de usuarios, metodos de consulta e información sobre el Real Madrid! Espero disfrutes esta app, como yo haciendo este proyecto!</p>
