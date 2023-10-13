@@ -1,5 +1,6 @@
 using System.Text;
 using API.Extension;
+using API.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -42,6 +43,7 @@ builder.Services.AddDbContext<DbAppContext>(options =>
 {
     options.UseNpgsql("Host=localhost;Database=MadridDb;Username=postgres;Password=1122809631");
 });
+builder.Services.AddScoped<IUserService, UserService>(); 
 
 var key = builder.Configuration.GetValue<string>("JwtSettings:Key");
 var keyBytes = Encoding.ASCII.GetBytes(key);
